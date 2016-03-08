@@ -18,23 +18,43 @@ _Release date: 2016.02.24_
     * ODataResourceDataset, WebTableDataset
 * The following copy source types have been added: 	
     * WebSource
-
-## Version 4.4.0
-_Release date: 2016.01.28_
+=======
+## Version 
+Release date: 
 
 ### Feature Additions
 
-* The following linked service type has been added as data sources and sinks for copy activities: 
-    * AzureStorageSasLinkedService
+* The following properties have been added to PipelineProperties: 
+    * PipelineMode
+    * ExpirationTime
+    * Datasets
 
-## Version 4.3.0
-_Release date: 2016.01.20_
+* The following properties have been added to PipelineRuntimeInfo: 
+    * PipelineState
+
+## Version 
+Release date:
+
+### Feature Additions
+
+* The following optional properties have been added to CopyActivity to to enable tuning of copy performance: 
+    * MaxConcurrentSessions
+    * MaxCloudDataMovementUnits
+=======
+Release date: 2016.01.20
 
 ### Feature Additions
 
 * The following linked service types haven been added as data sources for copy activities: 
     * HdfsLinkedService
     * OnPremisesOdbcLinkedService 
+
+## Version
+_Release date:_ 
+
+### Feature Additions
+
+* Added new StorageFormat type JsonFormat type to define datasets whose data is in JSON format. 
 
 ## Version 4.2.0
 _Release date: 2015.11.10_
