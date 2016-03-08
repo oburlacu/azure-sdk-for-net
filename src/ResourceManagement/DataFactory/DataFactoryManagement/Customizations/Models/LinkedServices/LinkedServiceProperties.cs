@@ -40,6 +40,12 @@ namespace Microsoft.Azure.Management.DataFactories.Models
         /// </summary>
         public string ProvisioningState { get; internal set; }
 
+        /// <summary>
+        /// Optional. The maximum number of concurrent jobs executed on this
+        /// compute resource.
+        /// </summary>
+        public uint? Concurrency { get; set; }
+
         public LinkedServiceProperties(LinkedServiceTypeProperties typeProperties)
             : base(typeProperties)
         {

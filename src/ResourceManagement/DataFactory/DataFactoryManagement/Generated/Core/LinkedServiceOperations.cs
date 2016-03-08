@@ -240,6 +240,11 @@ namespace Microsoft.Azure.Management.DataFactories.Core
                             propertiesValue["hubName"] = parameters.LinkedService.Properties.HubName;
                         }
                         
+                        if (parameters.LinkedService.Properties.Concurrency != null)
+                        {
+                            propertiesValue["concurrency"] = parameters.LinkedService.Properties.Concurrency.Value;
+                        }
+                        
                         if (parameters.LinkedService.Properties.ErrorMessage != null)
                         {
                             propertiesValue["errorMessage"] = parameters.LinkedService.Properties.ErrorMessage;
@@ -342,6 +347,13 @@ namespace Microsoft.Azure.Management.DataFactories.Core
                                 {
                                     string hubNameInstance = ((string)hubNameValue);
                                     propertiesInstance.HubName = hubNameInstance;
+                                }
+                                
+                                JToken concurrencyValue = propertiesValue2["concurrency"];
+                                if (concurrencyValue != null && concurrencyValue.Type != JTokenType.Null)
+                                {
+                                    uint concurrencyInstance = ((uint)concurrencyValue);
+                                    propertiesInstance.Concurrency = concurrencyInstance;
                                 }
                                 
                                 JToken errorMessageValue = propertiesValue2["errorMessage"];
@@ -614,6 +626,13 @@ namespace Microsoft.Azure.Management.DataFactories.Core
                                     propertiesInstance.HubName = hubNameInstance;
                                 }
                                 
+                                JToken concurrencyValue = propertiesValue["concurrency"];
+                                if (concurrencyValue != null && concurrencyValue.Type != JTokenType.Null)
+                                {
+                                    uint concurrencyInstance = ((uint)concurrencyValue);
+                                    propertiesInstance.Concurrency = concurrencyInstance;
+                                }
+                                
                                 JToken errorMessageValue = propertiesValue["errorMessage"];
                                 if (errorMessageValue != null && errorMessageValue.Type != JTokenType.Null)
                                 {
@@ -819,11 +838,11 @@ namespace Microsoft.Azure.Management.DataFactories.Core
                     {
                         result.Status = OperationStatus.Failed;
                     }
-                    if (statusCode == HttpStatusCode.OK)
+                    if (statusCode == HttpStatusCode.NoContent)
                     {
                         result.Status = OperationStatus.Succeeded;
                     }
-                    if (statusCode == HttpStatusCode.NoContent)
+                    if (statusCode == HttpStatusCode.OK)
                     {
                         result.Status = OperationStatus.Succeeded;
                     }
@@ -1278,6 +1297,13 @@ namespace Microsoft.Azure.Management.DataFactories.Core
                                     propertiesInstance.HubName = hubNameInstance;
                                 }
                                 
+                                JToken concurrencyValue = propertiesValue["concurrency"];
+                                if (concurrencyValue != null && concurrencyValue.Type != JTokenType.Null)
+                                {
+                                    uint concurrencyInstance = ((uint)concurrencyValue);
+                                    propertiesInstance.Concurrency = concurrencyInstance;
+                                }
+                                
                                 JToken errorMessageValue = propertiesValue["errorMessage"];
                                 if (errorMessageValue != null && errorMessageValue.Type != JTokenType.Null)
                                 {
@@ -1457,6 +1483,13 @@ namespace Microsoft.Azure.Management.DataFactories.Core
                                 {
                                     string hubNameInstance = ((string)hubNameValue);
                                     propertiesInstance.HubName = hubNameInstance;
+                                }
+                                
+                                JToken concurrencyValue = propertiesValue["concurrency"];
+                                if (concurrencyValue != null && concurrencyValue.Type != JTokenType.Null)
+                                {
+                                    uint concurrencyInstance = ((uint)concurrencyValue);
+                                    propertiesInstance.Concurrency = concurrencyInstance;
                                 }
                                 
                                 JToken errorMessageValue = propertiesValue["errorMessage"];
@@ -1707,6 +1740,13 @@ namespace Microsoft.Azure.Management.DataFactories.Core
                                             propertiesInstance.HubName = hubNameInstance;
                                         }
                                         
+                                        JToken concurrencyValue = propertiesValue["concurrency"];
+                                        if (concurrencyValue != null && concurrencyValue.Type != JTokenType.Null)
+                                        {
+                                            uint concurrencyInstance = ((uint)concurrencyValue);
+                                            propertiesInstance.Concurrency = concurrencyInstance;
+                                        }
+                                        
                                         JToken errorMessageValue = propertiesValue["errorMessage"];
                                         if (errorMessageValue != null && errorMessageValue.Type != JTokenType.Null)
                                         {
@@ -1903,6 +1943,13 @@ namespace Microsoft.Azure.Management.DataFactories.Core
                                         {
                                             string hubNameInstance = ((string)hubNameValue);
                                             propertiesInstance.HubName = hubNameInstance;
+                                        }
+                                        
+                                        JToken concurrencyValue = propertiesValue["concurrency"];
+                                        if (concurrencyValue != null && concurrencyValue.Type != JTokenType.Null)
+                                        {
+                                            uint concurrencyInstance = ((uint)concurrencyValue);
+                                            propertiesInstance.Concurrency = concurrencyInstance;
                                         }
                                         
                                         JToken errorMessageValue = propertiesValue["errorMessage"];

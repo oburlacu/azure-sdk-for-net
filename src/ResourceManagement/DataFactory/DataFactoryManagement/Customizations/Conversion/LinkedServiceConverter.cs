@@ -45,6 +45,7 @@ namespace Microsoft.Azure.Management.DataFactories.Conversion
                     Type = linkedService.Properties.Type,
                     Description = linkedService.Properties.Description,
                     HubName = linkedService.Properties.HubName,
+                    Concurrency = linkedService.Properties.Concurrency,
                     TypeProperties = typeProperties
                 }
             };
@@ -76,7 +77,8 @@ namespace Microsoft.Azure.Management.DataFactories.Conversion
                              Description = internalLinkedService.Properties.Description,
                              ErrorMessage = internalLinkedService.Properties.ErrorMessage,
                              HubName = internalLinkedService.Properties.HubName,
-                             ProvisioningState = internalLinkedService.Properties.ProvisioningState
+                             ProvisioningState = internalLinkedService.Properties.ProvisioningState,
+                             Concurrency = internalLinkedService.Properties.Concurrency
                          };
 
             return new LinkedService() { Name = internalLinkedService.Name, Properties = properties };

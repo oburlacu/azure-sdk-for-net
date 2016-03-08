@@ -29,6 +29,19 @@ namespace Microsoft.Azure.Management.DataFactories.Core.Models
     /// </summary>
     public partial class LinkedServiceProperties
     {
+        private uint? _concurrency;
+        
+        /// <summary>
+        /// Optional. The maximum number of concurrent jobs executed on this
+        /// compute linked service. If not specified, there is no limit to the
+        /// number of concurrent jobs.
+        /// </summary>
+        public uint? Concurrency
+        {
+            get { return this._concurrency; }
+            set { this._concurrency = value; }
+        }
+        
         private string _description;
         
         /// <summary>

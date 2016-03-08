@@ -41,6 +41,26 @@ namespace DataFactory.Tests.Framework.JsonSamples
 ";
 
         [JsonSample]
+        public const string HDInsightBYOCWithConcurrencyLinkedService = @"
+{
+    name: ""Test-BYOC-HDInsight-linkedService"",
+    properties:
+    {
+        type: ""HDInsight"",
+        hubName: ""testHub"",
+        concurrency: 2,
+        typeProperties:
+        {
+            clusterUri: ""https://MyCluster.azurehdinsight.net/"",
+            userName: ""MyUserName"",
+            password: ""$EncryptedString$MyEncryptedPassword"",
+            linkedServiceName: ""MyStorageAssetName""
+        }
+    }
+}
+";
+
+        [JsonSample]
         public const string HDInsightOnDemandLinkedService = @"
 {
     name: ""Test-on-demand-HDInsight-linkedService"",
@@ -67,6 +87,22 @@ namespace DataFactory.Tests.Framework.JsonSamples
     {
         type: ""AzureStorage"",
         hubName: ""testHub"",
+        typeProperties:
+        {
+            connectionString: ""MyConnectionString""
+        }
+    }
+}";
+
+        [JsonSample]
+        public const string AzureStorageLinkedServiceWithConcurrency = @"
+{
+    name: ""Test-Windows-Azure-storage-account-linkedService"",
+    properties:
+    {
+        type: ""AzureStorage"",
+        hubName: ""testHub"",
+        concurrency: 3,
         typeProperties:
         {
             connectionString: ""MyConnectionString""
