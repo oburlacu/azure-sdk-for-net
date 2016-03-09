@@ -5,6 +5,16 @@ _Release date:
 
 ### Feature Additions
 * Added the property Concurrency to LinkedServiceProperties to control the maximum number of jobs running on a  compute resource.
+=======
+## Version _
+_Release date: _
+
+
+### Feature Additions
+
+* The following optional properties have been added to CopyActivity to to enable tuning of copy performance: 
+    * ParallelCopies
+    * CloudUnits
 
 ## Version 4.5.0
 _Release date: 2016.02.24_
@@ -18,7 +28,7 @@ _Release date: 2016.02.24_
     * ODataResourceDataset, WebTableDataset
 * The following copy source types have been added: 	
     * WebSource
-=======
+
 ## Version 
 Release date: 
 

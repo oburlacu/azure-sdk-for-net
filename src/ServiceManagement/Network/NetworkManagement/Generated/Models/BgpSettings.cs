@@ -22,31 +22,48 @@
 using System;
 using System.Linq;
 
-namespace Microsoft.Azure.Management.HDInsight.Models
+namespace Microsoft.WindowsAzure.Management.Network.Models
 {
-    /// <summary>
-    /// The cluster type.
-    /// </summary>
-    public enum HDInsightClusterType
+    public partial class BgpSettings
     {
-        /// <summary>
-        /// Type Hadoop.
-        /// </summary>
-        Hadoop = 0,
+        private uint _asn;
         
         /// <summary>
-        /// Type HBase.
+        /// Optional. Autonomous System Number
         /// </summary>
-        HBase = 1,
+        public uint Asn
+        {
+            get { return this._asn; }
+            set { this._asn = value; }
+        }
+        
+        private string _bgpPeeringAddress;
         
         /// <summary>
-        /// Type Spark.
+        /// Optional. IP address/BGP identifier
         /// </summary>
-        Spark = 2,
+        public string BgpPeeringAddress
+        {
+            get { return this._bgpPeeringAddress; }
+            set { this._bgpPeeringAddress = value; }
+        }
+        
+        private int _peerWeight;
         
         /// <summary>
-        /// Type Storm.
+        /// Optional. Weight for routes learned from this peer
         /// </summary>
-        Storm = 3,
+        public int PeerWeight
+        {
+            get { return this._peerWeight; }
+            set { this._peerWeight = value; }
+        }
+        
+        /// <summary>
+        /// Initializes a new instance of the BgpSettings class.
+        /// </summary>
+        public BgpSettings()
+        {
+        }
     }
 }
