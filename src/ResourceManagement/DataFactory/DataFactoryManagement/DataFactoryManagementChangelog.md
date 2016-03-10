@@ -13,11 +13,19 @@ _Release date: _
 ### Feature Additions
 
 * The following optional properties have been added to CopyActivity to to enable tuning of copy performance: 
+<<<<<<< HEAD
     * ParallelCopies
     * CloudUnits
 
 ## Version 4.5.0
 _Release date: 2016.02.24_
+=======
+    * MaxConcurrentSessions
+    * MaxCloudDataMovementUnits
+
+## Version 
+Release date: 
+>>>>>>> jikma/4.6.0-rc02
 
 ### Feature Additions
 * Added list operations for activity window.
@@ -47,11 +55,27 @@ Release date:
 
 ### Feature Additions
 
+<<<<<<< HEAD
 * The following optional properties have been added to CopyActivity to to enable tuning of copy performance: 
     * MaxConcurrentSessions
     * MaxCloudDataMovementUnits
 =======
 Release date: 2016.01.20
+=======
+* The following linked service types have been added: 
+    * WebLinkedService
+* The following dataset types have been added: 
+    * WebTableDataset
+* The following copy source types have been added: 	
+    * WebSource
+
+## Version 4.3.0
+<<<<<<< HEAD
+_Release date: 2016.01.20_
+=======
+Release date: 2016.01.20
+>>>>>>> bowan/4.6.0-rc01
+>>>>>>> jikma/4.6.0-rc02
 
 ### Feature Additions
 
