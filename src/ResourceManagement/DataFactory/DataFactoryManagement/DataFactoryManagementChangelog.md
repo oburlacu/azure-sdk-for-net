@@ -1,6 +1,16 @@
 ﻿For additional details on features, see the full [Azure Data Factory Release Notes](https://azure.microsoft.com/en-us/documentation/articles/data-factory-release-notes). 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+## Version 
+_Release date: _ 
+
+### Bug Fixes
+* Mark WriteBatchSize and WriteBatchTimeout as optional in CopySink.  
+
+
+>>>>>>> a2f82c513ee97ea7fbb02bacdb53e30b2bab9b7b
 ## Version 4.6.0
 _Release date: 2016.03.28_ 
 
