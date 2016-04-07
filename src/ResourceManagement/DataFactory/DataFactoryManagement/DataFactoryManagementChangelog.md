@@ -29,6 +29,8 @@ _Release date: 2016.02.24_
     * ODataResourceDataset, WebTableDataset
 * The following copy source types have been added: 	
     * WebSource
+* Add AllowPolyBase and PolyBaseSettings properties to SqlDWSink.
+    * Enables the use of PolyBase to copy data into SQL Data Warehouse.
 
 ## Version 4.4.0
 _Release date: 2016.01.28_
