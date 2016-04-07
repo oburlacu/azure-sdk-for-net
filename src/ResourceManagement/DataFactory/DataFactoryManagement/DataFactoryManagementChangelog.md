@@ -1,5 +1,6 @@
 ﻿For additional details on features, see the full [Azure Data Factory Release Notes](https://azure.microsoft.com/en-us/documentation/articles/data-factory-release-notes). 
 
+<<<<<<< HEAD
 ## Version 4.6.0
 _Release date: 2016.03.28_ 
 
@@ -16,6 +17,17 @@ _Release date: 2016.03.28_
 ### Bug Fixes
 
 * Fixes a bug where parameters for listing activity windows were not being sent in HTTP requests.
+=======
+## Version _
+_Release date: _
+
+
+### Feature Additions
+
+* The following optional properties have been added to CopyActivity to to enable tuning of copy performance: 
+    * ParallelCopies
+    * CloudUnits
+>>>>>>> 17b8511b0ffa81af95212845f88c8e3d01aeeab1
 
 ## Version 4.5.0
 _Release date: 2016.02.24_
