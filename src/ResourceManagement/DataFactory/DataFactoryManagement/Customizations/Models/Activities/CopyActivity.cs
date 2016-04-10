@@ -39,6 +39,17 @@ namespace Microsoft.Azure.Management.DataFactories.Models
         public CopyTranslator Translator { get; set; }
 
         /// <summary>
+        /// Optional. Specifies whether to copy data via an interim staging.
+        /// Default value is false.
+        /// </summary>
+        public bool? EnableStaging { get; set; }
+
+        /// <summary>
+        /// Optional. Specifies interim staging settings when EnableStaging is true.
+        /// </summary>
+        public StagingSettings StagingSettings { get; set; }
+
+        /// <summary>
         /// Optional. Maximum number of concurrent sessions opened on the source and sink, to avoid session overload and affecting other workloads.
         /// If not configured, an appropriate default value will be chosen for each type of source and sink.
         /// </summary>

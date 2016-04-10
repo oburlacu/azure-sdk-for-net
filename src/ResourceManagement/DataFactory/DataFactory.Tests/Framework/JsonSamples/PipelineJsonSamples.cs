@@ -327,6 +327,13 @@ namespace DataFactory.Tests.Framework.JsonSamples
                             useTypeDefault: true
                         }
                     },
+                    enableStaging: true,
+                    stagingSettings: 
+                    {
+                        linkedServiceName: ""MyStagingBlob"",
+                        path: ""stagingcontainer/path"",
+                        enableCompression: true
+                    }
                 },
                 inputs: 
                 [ 
@@ -1113,7 +1120,9 @@ namespace DataFactory.Tests.Framework.JsonSamples
                         writeBatchSize: 1000000,
                         writeBatchTimeout: ""01:00:00"",
                         copyBehavior: ""FlattenHierarchy""
-                    }
+                    },
+                    cloudUnits: 8,
+                    parallelCopies: 10
                 },
                 inputs: 
                 [ 
