@@ -1,7 +1,44 @@
 ﻿For additional details on features, see the full [Azure Data Factory Release Notes](https://azure.microsoft.com/en-us/documentation/articles/data-factory-release-notes). 
 
+## Version
+_Release date:_ 
+
+### Feature Additions
+
+* Add OracleSink properties: "SqlWriterCleanupScript" and "SliceIdentifierColumnName"
+
+## Version 4.6.0
+_Release date: 2016.03.28_ 
+
+### Feature Additions
+
+* The following properties have been added to PipelineProperties: 
+    * PipelineMode
+    * ExpirationTime
+    * Datasets
+* The following properties have been added to PipelineRuntimeInfo: 
+    * PipelineState
+* Added new StorageFormat type JsonFormat type to define datasets whose data is in JSON format. 
+
+### Bug Fixes
+
+* Fixes a bug where parameters for listing activity windows were not being sent in HTTP requests.
+
+## Version 4.5.0
+_Release date: 2016.02.24_
+
+### Feature Additions
+* Added list operations for activity window.
+    * Added methods to retrieve activity windows with filters based on the entity types (i.e. data factories, datasets, pipelines and activities).
+* The following linked service types have been added: 
+    * ODataLinkedService, WebLinkedService
+* The following dataset types have been added: 
+    * ODataResourceDataset, WebTableDataset
+* The following copy source types have been added: 	
+    * WebSource
+
 ## Version 4.4.0
-Release date: 2016.01.28
+_Release date: 2016.01.28_
 
 ### Feature Additions
 
@@ -9,7 +46,7 @@ Release date: 2016.01.28
     * AzureStorageSasLinkedService
 
 ## Version 4.3.0
-Release date: 2015.11.25
+_Release date: 2016.01.20_
 
 ### Feature Additions
 
@@ -18,7 +55,7 @@ Release date: 2015.11.25
     * OnPremisesOdbcLinkedService 
 
 ## Version 4.2.0
-Release date: 2015.11.10
+_Release date: 2015.11.10_
 
 ### Feature Additions
 
