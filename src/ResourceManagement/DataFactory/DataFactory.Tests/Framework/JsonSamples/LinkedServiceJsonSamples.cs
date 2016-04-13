@@ -440,5 +440,20 @@ namespace DataFactory.Tests.Framework.JsonSamples
         }
     }
 }";
+
+        [JsonSample]
+        public const string SalesforceLinkedService = @"
+{
+    name: ""Test-salesforce-linkedService"",
+    properties:
+    {
+        type: ""Salesforce"",
+        typeProperties: {
+            userName: ""microsoft"",
+            password: ""fakepassword"",
+            securityToken: ""fakeToken""
+        }
+    }
+}";
     }
 }
